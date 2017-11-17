@@ -1,4 +1,5 @@
 
-<?php	
-    header ("Location:http://".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/inicio.php");
+<?php
+    include('util/init.php');
+    header ("Location:".base_url."vista/");
 ?>

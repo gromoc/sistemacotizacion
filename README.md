@@ -1,1 +1,3 @@
-# sistemacotizacion
+# SISTEMA DE COTIZACION
+# Proyecto php modelo MVC OBB 
+# FECHA DE CREACIÓN: 16-11-2017 
