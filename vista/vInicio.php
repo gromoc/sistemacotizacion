@@ -3,7 +3,7 @@
 		<div class="content_top">
 			<div class="wrap">
 				<h3>
-					<a style="border: 3px solid #000080; color:#000080; background: url(../imagenes/metal.png) no-repeat center center;">
+					<a style="border: 3px solid #000080; color:#000080; background: url(../public/imagenes/metal.png) no-repeat center center;">
 						Nuestros Productos</a>
 					<i style="font-size:15px; color:#000080;"> - Fabricamos todo tipo de Estructuras Metálicas</i>
 				</h3>
@@ -93,23 +93,23 @@
 
 			<ul id="filters" class="clearfix">
 				<li class="filtter-color1">
-					<span class="filter active" style="border: 3px solid #000080; color:#000080; background: url(../imagenes/metal.png) no-repeat center center;"
+					<span class="filter active" style="border: 3px solid #000080; color:#000080; background: url(../public/imagenes/metal.png) no-repeat center center;"
 					    data-filter="app card icon logo web">TODAS</span>
 				</li>
 				<li class="filtter-color2">
-					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../imagenes/metal.png) no-repeat center center;"
+					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../public/imagenes/metal.png) no-repeat center center;"
 					    data-filter="app">TECHOS</span>
 				</li>
 				<li class="filtter-color3">
-					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../imagenes/metal.png) no-repeat center center;"
+					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../public/imagenes/metal.png) no-repeat center center;"
 					    data-filter="card">LEVADIZAS</span>
 				</li>
 				<li class="filtter-color4">
-					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../imagenes/metal.png) no-repeat center center;"
+					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../public/imagenes/metal.png) no-repeat center center;"
 					    data-filter="icon">ENROLLABLES</span>
 				</li>
 				<li class="filtter-color5">
-					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../imagenes/metal.png) no-repeat center center;"
+					<span class="filter" style="border: 3px solid #000080; color:#000080; background: url(../public/imagenes/metal.png) no-repeat center center;"
 					    data-filter="app">PORTONES</span>
 				</li>
 			</ul>
@@ -118,7 +118,7 @@
 			<div class="portfolio logo1 mix_all port-big-grid wow bounceIn" data-wow-delay="0.5s" data-cat="logo" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra1.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra1.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -134,7 +134,7 @@
 			<div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="app" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra2.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra2.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -149,7 +149,7 @@
 			<div class="portfolio web mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="web" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra3.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra3.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -165,7 +165,7 @@
 			<div class="portfolio icon mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="icon" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra6.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra6.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -181,7 +181,7 @@
 			<div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="app" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra5.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra5.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -197,7 +197,7 @@
 			<div class="portfolio card mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="card" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra10.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra10.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -213,7 +213,7 @@
 			<div class="portfolio icon mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="icon" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra7.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra7.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -229,7 +229,7 @@
 			<div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="app" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra4.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra4.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -245,7 +245,7 @@
 			<div class="portfolio card mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="card" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper">
 					<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						<img class="p-img" style=" width: 445px; height: 227px;" src="../images/obra9.png" />
+						<img class="p-img" style=" width: 445px; height: 227px;" src="../public/images/obra9.png" />
 						<div class="b-wrapper">
 							<div class="caption">
 								<h4>PROYECTO</h4>
@@ -269,7 +269,7 @@
 		<table class="style4">
 			<tr>
 				<td>
-					<img class="imgfb" src="<?= base_url."imagenes/fb.jpg";?>">
+					<img class="imgfb" src="<?= base_url."public/imagenes/fb.jpg";?>">
 				</td>
 				<td class="facebook" style="color: #CCFFFF; text-align: justify; font-family: Arial black; text-shadow: 0 1px 0 grey, 0 2px 0 lightblue, 0 3px 0 #bbb, 0 4px 0 black;">Compartir esta pagina en "FACEBOOK"</td>
 			</tr>

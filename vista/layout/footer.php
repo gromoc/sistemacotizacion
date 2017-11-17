@@ -1,10 +1,12 @@
 <hr style="color: black;">
-
+<center>
+<br>
+<br>
     <div style="color: red;">© Copyright 2001-2017
         <a target="_blank" href="http://www.copyright.es">Copyright.es</a> - All Rights Reserved - Legal - Todos los derechos reservados</div>
     <br>
     <br>
-
+</center>
     <script type="text/javascript" src="<?= base_url_js."jquery.min.js ";?>"></script>
     <!-- <script type="text/javascript" src="<?= base_url_js."jquery.corner.js ";?>"></script> -->
     <script type="text/javascript" src="<?= base_url_js."wow.min.js ";?>"></script>

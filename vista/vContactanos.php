@@ -5,36 +5,31 @@
         <tr style="margin: auto; display: block; padding: 5px">
             <td class="facebook2">
                 <a class="facebook3" target="_blank" href="https://www.facebook.com/henry.paytancarreno">
-                    <img style="width: 25px; height: 25px; border: 2px solid blue;" src="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/imagenes/fb.png
-                        ";?>"> FACEBOOK
+                    <img style="width: 25px; height: 25px; border: 2px solid blue;" src="../public/imagenes/fb.png"> FACEBOOK
                 </a>
             </td>
         </tr>
         <tr>
             <td style="margin: auto; display: block;">
                 <font style="font-family: arial black; width: 50%; margin: auto;">NUMEROS DE CONTACTO: </font>
-                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
-                    onmouseout="this.style.background=' url(../imagenes/metal.png)'">
-                    <img style="width:30px; height:30px; align-content: flex-end" src="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/images/Phone_number.png
-                        ";?>" alt="" /> 997789832
-                    <img style="width:30px; height:30px; align-content: flex-end" src="<?php echo " http://
-                        ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/imagenes/Claro.png ";?>" alt="" />
+                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../public/imagenes/metal.png) no-repeat center center'"
+                    onmouseout="this.style.background=' url(../public/imagenes/metal.png)'">
+                    <img style="width:30px; height:30px; align-content: flex-end" src="../public/images/Phone_number.png
+                        " alt="" /> 997789832
+                    <img style="width:30px; height:30px; align-content: flex-end" src="../public/imagenes/Claro.png" alt="" />
                 </font>
                 <br>
-                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
-                    onmouseout="this.style.background=' url(../imagenes/metal.png)'">
-                    <img style="width:30px; height:30px; align-content: flex-end" src="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/images/Phone_number.png
-                        ";?>" alt="" /> 921469547
-                    <img style="width:30px; height:30px; align-content: flex-end" src="<?php echo " http://
-                        ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/imagenes/Bitel.png ";?>" alt="" />
+                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../public/imagenes/metal.png) no-repeat center center'"
+                    onmouseout="this.style.background=' url(../public/imagenes/metal.png)'">
+                    <img style="width:30px; height:30px; align-content: flex-end" src="../public/images/Phone_number.png" alt="" /> 921469547
+                    <img style="width:30px; height:30px; align-content: flex-end" src="../public/imagenes/Bitel.png" alt="" />
                 </font>
                 <br>
-                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
-                    onmouseout="this.style.background=' url(../imagenes/metal.png)'">
-                    <img style="width:30px; height:30px; align-content: flex-end" src="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/images/Phone_number.png
-                        ";?>" alt="" /> 966321800
-                    <img style="width:30px; height:30px; align-content: flex-end" src="<?php echo " http://
-                        ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/imagenes/Claro.png ";?>" alt="" />
+                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../public/imagenes/metal.png) no-repeat center center'"
+                    onmouseout="this.style.background=' url(../public/imagenes/metal.png)'">
+                    <img style="width:30px; height:30px; align-content: flex-end" src="../public/images/Phone_number.png
+                        " alt="" /> 966321800
+                    <img style="width:30px; height:30px; align-content: flex-end" src="../public/imagenes/Claro.png" alt="" />
                 </font>
                 <br>
                 <br>
@@ -47,15 +42,15 @@
         </tr>
         <tr style="width: 90%; margin: auto;">
             <td>
-                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
-                    onmouseout="this.style.background=' url(../imagenes/metal.png)'">
+                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../public/imagenes/metal.png) no-repeat center center'"
+                    onmouseout="this.style.background=' url(../public/imagenes/metal.png)'">
                     henrryhoilmes@gmail.com</font>
             </td>
         </tr>
         <tr style="width: 90%; margin: auto;">
             <td>
-                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
-                    onmouseout="this.style.background=' url(../imagenes/metal.png)'">
+                <font class="texto-quienes-somos" onmouseover="this.style.background='url(../public/imagenes/metal.png) no-repeat center center'"
+                    onmouseout="this.style.background=' url(../public/imagenes/metal.png)'">
                     reynaldo6621@gmail.com</font>
                 <br>
             </td>

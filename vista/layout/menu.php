@@ -44,13 +44,13 @@
             <tr>
                 <td class="fila_superior1">
                     <a href="index.php">
-                        <img class="imagenfilasuperior1" src="<?= base_url_img." left-fold.png ";?>" alt="">
+                        <img class="imagenfilasuperior1" src="<?= base_url_img."left-fold.png ";?>" alt="">
                     </a>
                 </td>
                 <td class="fila_superior2">EMPRESA DE FABRICACION DE ESTRUCTURAS METALICAS DE: HENRRY HOLMES PAYTAN CARREÑO</td>
                 <td class="fila_superior3">
                     <a href="index.php">
-                        <img class="imagenfilasuperior3" src="<?= base_url_img." left-fold.png ";?>" alt="">
+                        <img class="imagenfilasuperior3" src="<?= base_url_img."left-fold.png ";?>" alt="">
                     </a>
                 </td>
             </tr>

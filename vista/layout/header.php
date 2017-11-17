@@ -12,9 +12,8 @@
 <link href="<?= base_url_css."style_3.css";?>" rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css' />
-
-<!-- <link   type="text/css" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/css/estilopropio.css";?>" rel="stylesheet"> -->
-<!-- <link rel="stylesheet" href="http://aurea.es/style.css?nocache=" type="text/css" media="screen" /> -->
+<link   type="text/css" href="<?= base_url_css."estilopropio.css";?>" rel="stylesheet">
+<!-- <link rel="stylesheet" href="http://aurea.es/style.css?nocache=" type="text/css" media="screen" />  -->
 
 
 
