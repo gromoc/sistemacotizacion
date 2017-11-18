@@ -59,15 +59,16 @@
     </div>
     <table class="tablachat">
         <tr style="margin: auto; display: block;">
-            <td style="margin: auto; display: block; font-family: arial black; color: white; text-align: center;">CHAT USUARIOS</td>
+            <td style="margin: auto; display: block; font-family: arial black; color: white; text-align: center;">CONTACTENOS</td>
         </tr>
         <tr>
             <td style="margin: auto; display: block;">
                 <div class="contenedorchat" style="margin: auto; display: block;">
                     <form method='POST' valign="top" cellpadding="0" style="margin: auto; display: block;">
-                        <textarea style="margin: auto; display: block; height: 30px;" name='nombre' autofocus="autofocus" placeholder="Ingresa tu Nombre"></textarea>
-                        <br>
-                        <textarea style="margin: auto; display: block; height: 30px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
+                        <input style="margin: auto; display: block;" type="text" name='nombre' autofocus="autofocus" placeholder="Ingresa su nombre">
+                        <input style="margin: auto; display: block;" type="text" name='email' autofocus="autofocus" placeholder="Ingresa su email">
+                    
+                        <textarea style="margin: auto; display: block; height: 60px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
                         <br>
                         <input style="margin: auto; display: block;" id="enviar" type="submit" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='#CCFFFF'"
                             name="enviar" value="ENVIAR">
