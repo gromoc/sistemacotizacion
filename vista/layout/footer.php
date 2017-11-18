@@ -85,7 +85,7 @@
         document.form.submit();
     }
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     function ajax() {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function () {
@@ -100,7 +100,7 @@
     setInterval(function () {
         ajax();
     }, 1000);
-</script>
+</script> -->
 
 
 <script type="text/javascript" src="<?= base_url_js."jquery.mixitup.min.js ";?>"></script>

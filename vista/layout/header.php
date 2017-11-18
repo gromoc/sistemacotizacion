@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title><?= title; ?></title>
 <link href="<?= base_url_css."animate.css"; ?>" rel="stylesheet" type="text/css" media="all">
-<link href="<?= base_url_css."bootstrap_2.css"; ?>" rel='stylesheet' type='text/css' />
+<link href="<?= base_url_css."bootstrap.css"; ?>" rel='stylesheet' type='text/css' />
 <link href="<?= base_url_css."estilo.css";?>" rel="stylesheet" type="text/css" />
 <link href="<?= base_url_css."style.css";?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?= base_url_css."style_1.css";?>" rel="stylesheet" type="text/css" media="all"/>
