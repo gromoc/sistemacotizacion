@@ -5,4 +5,7 @@ define("base_url_css", $url."public/css/");
 define("base_url_js", $url."public/js/");
 define("base_url_img", $url."public/images/");
 define("title","EMPRESA DE HENRRY HOLMES PAYTAN CARREÑO");
+define("CONTROLADOR_DEFECTO", "Usuarios");
+define("ACCION_DEFECTO", "index");
+
 ?>
