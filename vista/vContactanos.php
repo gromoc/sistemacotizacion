@@ -1,6 +1,4 @@
-<?php
-    include '../util/conexionbd.php';
-?>
+
     <table class="style2">
         <tr style="margin: auto; display: block; padding: 5px">
             <td class="facebook2">
@@ -59,15 +57,15 @@
     </div>
     <table class="tablachat">
         <tr style="margin: auto; display: block;">
-            <td style="margin: auto; display: block; font-family: arial black; color: white; text-align: center;">CHAT USUARIOS</td>
+            <td style="margin: auto; display: block; font-family: arial black; color: white; text-align: center;">CONTACTENOS</td>
         </tr>
         <tr>
             <td style="margin: auto; display: block;">
                 <div class="contenedorchat" style="margin: auto; display: block;">
-                    <form method='POST' valign="top" cellpadding="0" style="margin: auto; display: block;">
-                        <textarea style="margin: auto; display: block; height: 30px;" name='nombre' autofocus="autofocus" placeholder="Ingresa tu Nombre"></textarea>
-                        <br>
-                        <textarea style="margin: auto; display: block; height: 30px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
+                    <form method='POST' action="../controlador/cContacto.php" valign="top" cellpadding="0" style="margin: auto; display: block;">
+                        <input style="margin: auto; display: block;" type="text" name='nombre' autofocus="autofocus" placeholder="Ingresa su nombre">
+                        <input style="margin: auto; display: block;" type="text" name='email' autofocus="autofocus" placeholder="Ingresa su email">
+                        <textarea style="margin: auto; display: block; height: 60px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
                         <br>
                         <input style="margin: auto; display: block;" id="enviar" type="submit" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='#CCFFFF'"
                             name="enviar" value="ENVIAR">
@@ -75,17 +73,6 @@
                     <div id='caja-chat' onload="ajax();">
                         <div id='chat'></div>
                     </div>
-                    <?php
-            if (isset($_POST['enviar'])){
-                $nombre = $_POST['nombre'];
-                $mensaje = $_POST['mensaje'];
-                $consulta = "INSERT INTO chat (nombre,mensaje) VALUES ('$nombre','$mensaje')";
-                $ejecutar = $conexion->query($consulta);
-                if ($ejecutar){
-                    echo "<embed loop='false' src='chat.mp3' hidden='true' autoplay='true'>";
-                }
-            }
-            ?>
                 </div>
             </td>
         </tr>
