@@ -16,5 +16,4 @@
   }else{
     header('Location: ../vista/index.php?sec=vContactanos&res=error');   
   }
-
 ?>
