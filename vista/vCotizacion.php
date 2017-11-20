@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <?php
   ob_start();
-  session_start();// creando la sesion  
+  //session_start();// creando la sesion  
   require_once "../util/session.php";
   require_once '../util/conexionbd.php';
   ?>

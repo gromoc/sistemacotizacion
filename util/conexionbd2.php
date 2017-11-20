@@ -3,7 +3,7 @@ class ConexionBD
 {  const  SERVER="localhost";
    const  USER="root";
    const  PASS="";
-   const  DATABASE="db_henry";
+   const  DATABASE="db_cotizacion";
    private $cn=null;   
    public  function getConexionBD()
    {   try 
