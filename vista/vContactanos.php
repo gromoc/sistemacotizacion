@@ -57,22 +57,28 @@
     </div>
     <table class="tablachat">
         <tr style="margin: auto; display: block;">
-            <td style="margin: auto; display: block; font-family: arial black; color: white; text-align: center;">CONTACTENOS</td>
+            <td style="margin: auto; display: block; font-family: arial black; color: white; text-align: center;margin-top:20px;font-size:24px;">CONTACTENOS</td>
         </tr>
         <tr>
             <td style="margin: auto; display: block;">
-                <div class="contenedorchat" style="margin: auto; display: block;">
-                    <form method='POST' action="../controlador/cContacto.php" valign="top" cellpadding="0" style="margin: auto; display: block;">
-                        <input style="margin: auto; display: block;" type="text" name='nombre' autofocus="autofocus" placeholder="Ingresa su nombre">
-                        <input style="margin: auto; display: block;" type="text" name='email' autofocus="autofocus" placeholder="Ingresa su email">
-                        <textarea style="margin: auto; display: block; height: 60px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
-                        <br>
-                        <input style="margin: auto; display: block;" id="enviar" type="submit" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='#CCFFFF'"
+                <div class="contenedorchat" style="margin: auto; display: block; ">
+                    <p style="font-size:16px;text-align:center;margin-bottom:15px;margin-top:15px;">Para mayor información sobre nuestros productos ,<br> contáctanos a través de este formulario</p>
+                    <form method='POST' action="../controlador/cContacto.php" valign="top" cellpadding="0" style="margin: auto; display: block; width: 450px;">
+                        <div class="form-group">
+                            <input style="margin: auto; display: block;" type="text" name='nombre' autofocus="autofocus" placeholder="Ingresa su nombre">
+                        </div>
+                        <div class="form-group">
+                            <input style="margin: auto; display: block;" type="text" name='email' autofocus="autofocus" placeholder="Ingresa su email">
+                        </div>
+                        <div class="form-group">
+                            <textarea style="margin: auto; display: block; height: 90px; width: 450px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
+                        </div>
+                       <div class="form-group">
+                            <input style="margin: auto; display: block;" id="enviar" type="submit" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='#CCFFFF'"
                             name="enviar" value="ENVIAR">
+                       </div>
                     </form>
-                    <div id='caja-chat' onload="ajax();">
-                        <div id='chat'></div>
-                    </div>
+                   
                 </div>
             </td>
         </tr>

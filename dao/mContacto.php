@@ -38,5 +38,34 @@ class mContacto
 
   }
 
+  public function validarAcceso(BRegistro $OBJDatos){
+    try{
+      $usuario=$OBJDatos->usuario;
+      $clave = $OBJDatos->clave;
+
+      $sql="SELECT cUsuUsuario, cUsuTipo FROM usuario WHERE cUsuUsuario='$usuario' AND cUsuClave='$clave'";
+
+      $result=$this->db->query($sql);
+
+      if($result->num_rows == 1){
+
+        $row = mysqli_fetch_assoc($result);
+        $respuesta= $row['cUsuTipo'];
+
+        $_SESSION['user']= $row['cUsuUsuario'];
+
+        
+      }else{
+
+        $respuesta=200;
+      }
+
+    }
+    catch (Exception $exc) {
+      echo $exc;
+    }
+  return $respuesta;   
+  }
+
 }
 ?>

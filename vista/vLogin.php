@@ -26,7 +26,7 @@
                     <h4 type="text" class="text_menu2" style='text-align: center'>INGRESAR AL SISTEMA</h4>
                 </div>
                 <div class="panel-body">
-                    <form action="">
+                    <form action="../controlador/cRegistro.php" method="POST">
                         <div class="form-group" align="center">
                             <input type="hidden" name="op">
 
@@ -39,10 +39,14 @@
                                 size="30">
                         </div>
                         <div class="form-group text-center" >
-                            <a style="align-content: center; text-align: center; margin: auto;" class="boton" onmouseover="this.style.background='#CCCCFF'"
+                            <input type="submit" name="acceso" value="entrar">
+                            <!-- <a style="align-content: center; text-align: center; margin: auto;" class="boton" onmouseover="this.style.background='#CCCCFF'"
                                 onmouseout="this.style.background='#757575'" style="width:70px; height:70px" title="Ingresar al Sistema"
-                                href="javascript:enviar()">
-                                <img src="../public/imagenes/ingresar.png" style="width:50px; height:50px" border='1'>INGRESAR</a>
+                               >
+                                <img src="../public/imagenes/ingresar.png" style="width:50px; height:50px" border='1'>INGRESAR</a> -->
+
+                       
+                           
                             <a style="align-content: center; text-align: center; margin: auto;" class="boton" onmouseover="this.style.background='#CCCCFF'"
                                 onmouseout="this.style.background='#757575'" style="width:70px; height:70px" title="Salir" href="javascript:cerrar()">
                                 <img src="../public/imagenes/salir.png" style="width:50px; height:50px" border='1'>SALIR</a>

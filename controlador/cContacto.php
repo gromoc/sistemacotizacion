@@ -5,6 +5,8 @@
   $objContacto=new mContacto();
   $objBean=new BContacto();
 
+if(isset($_POST['enviar'])){
+
   $objBean->setNombre($_POST['nombre']);
   $objBean->setEmail($_POST['email']);
   $objBean->setMensaje($_POST['mensaje']);
@@ -16,4 +18,8 @@
   }else{
     header('Location: ../vista/index.php?sec=vContactanos&res=error');   
   }
+  
+}
+
+
 ?>

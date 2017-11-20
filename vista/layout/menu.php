@@ -1,42 +1,3 @@
-<center>
-    <div id="menuvertical">
-        <ul>
-            <li align="center">
-                <a href="#" align="center">
-                    <button class="boton-chat" onmouseover="this.style.background='#CCFFFF'" onmouseout="this.style.background='white'">CHAT USUARIOS</button>
-                </a>
-                <ul>
-                    <li>
-                        <center>
-                            <div id='contenedor'>
-                                <form method='POST' valign="top" cellpadding="0">
-                                    <textarea style="height: 30px;" name='nombre' autofocus="autofocus" placeholder="Ingresa tu Nombre"></textarea>
-                                    <textarea style="height: 30px;" name='mensaje' placeholder="Ingresa tu Mensaje"></textarea>
-                                    <input id="enviar" type="submit" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='#CCFFFF'"
-                                        name="enviar" value="ENVIAR">
-                                </form>
-                                <div id='caja-chat' onload="ajax();">
-                                    <div id='chat'></div>
-                                </div>
-                                <?php
-										if (isset($_POST['enviar'])){
-											$nombre = $_POST['nombre'];
-											$mensaje = $_POST['mensaje'];
-											$consulta = "INSERT INTO chat (nombre,mensaje) VALUES ('$nombre','$mensaje')";
-											$ejecutar = $conexion->query($consulta);
-											if ($ejecutar){
-												echo "<embed loop='false' src='chat.mp3' hidden='true' autoplay='true'>";
-											}
-										}
-										?>
-                            </div>
-                        </center>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</center>
 
 <center>
     <div class="tablainicio">
@@ -79,6 +40,12 @@
                 </td>
             </tr>
         </table>
+        <?php
+        if(isset($_SESSION['user'])){
+            echo "<div>BIENVENIDO".$_SESSION['user']."</div>";
+        }
+        ?>
+      
     </div>
     <br>
     <br>
