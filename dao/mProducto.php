@@ -19,23 +19,38 @@ class mProducto
     // }
 
   public function createNewMessage(BProducto $OBJProducto){ 
-
     try {    
-      $sql="INSERT INTO contacto(nombre,email,mensaje)"
+      $sql="INSERT INTO producto(nombre,descripcion,distribuidor, fechacrea)"
             . "VALUES('$OBJProducto->nombre',"
             . "       '$OBJProducto->descripcion'," 
-            . "       '$OBJProducto->distribuidor')";
-          
+            . "       '$OBJProducto->distribuidor',
+            NOW())";    
        $result=$this->db->query($sql);
-
        $row_cnt=$this->db->affected_rows;
-  
     } 
     catch (Exception $exc) {
         echo $exc;
     }
-   return $row_cnt;    
+   return $row_cnt;   
+  }
 
+  public function obtenerProductos(){
+    try{
+      $sql = "SELECT * FROM producto;";
+      $result=$this->db->query($sql);
+      $resultado = array();
+      foreach($$result->fetchAll(PDO::FETCH_OBJ) as $r)
+			{
+        $OBJProducto = new BProducto();
+        $OBJProducto->setNombre($r->nombre);
+        $OBJProducto->setDescripcion($r->descripcion);
+        $OBJProducto->setDistribuidor($r->distribuidor);
+        $resultado[] = $OBJProducto;          
+      }
+      return $resultado;
+    }  catch (Exception $exc) {
+      echo $exc;
+  }
   }
 
 }

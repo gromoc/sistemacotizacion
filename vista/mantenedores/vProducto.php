@@ -1,5 +1,6 @@
 <?php 
 include('../../util/init.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +37,7 @@ include('../../util/init.php');
 				                    <label for="">Distribuidor</label>
 				                    <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor' style="width:100%;" required/>
 				                    <br>
+									<input type="hidden" name="tipoform" value="nuevo">
 									<button type="submit" id="enviar" name="enviar"	 class="btn btn-primary">Guardar</button>
 									<button type="reset" class="btn btn-danger">Limpiar</button>
 				                </form>
