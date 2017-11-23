@@ -36,21 +36,40 @@ class mProducto
 
   public function obtenerProductos(){
     try{
-      $sql = "SELECT * FROM producto;";
-      $result=$this->db->query($sql);
-      $resultado = array();
-      foreach($$result->fetchAll(PDO::FETCH_OBJ) as $r)
-			{
-        $OBJProducto = new BProducto();
-        $OBJProducto->setNombre($r->nombre);
-        $OBJProducto->setDescripcion($r->descripcion);
-        $OBJProducto->setDistribuidor($r->distribuidor);
-        $resultado[] = $OBJProducto;          
-      }
-      return $resultado;
-    }  catch (Exception $exc) {
-      echo $exc;
+        $sql = "SELECT * FROM producto;";
+        $result=$this->db->query($sql);
+        $resultado = array();
+        foreach($$result->fetchAll(PDO::FETCH_OBJ) as $r)
+        {
+          $OBJProducto = new BProducto();
+          $OBJProducto->setNombre($r->nombre);
+          $OBJProducto->setDescripcion($r->descripcion);
+          $OBJProducto->setDistribuidor($r->distribuidor);
+          $resultado[] = $OBJProducto;          
+        }
+        return $resultado;
+      }  catch (Exception $exc) {
+        echo $exc;
+    }
   }
+  public function setProductsforCategory($categoria){
+      try{
+        $sql = "SELECT * FROM productos p INNER JOIN categorias c ON p.idCategoria = c.idCategoria WHERE p.idCategoria='$categoria'";
+        $result=$this->db->query($sql);
+        if($result->num_rows >= 1){
+          
+          while($row = $result->fetch_assoc()){
+            $data[] = $row;
+          }
+        }else{
+
+          $data = false;
+        }
+        return $data;
+
+      }  catch (Exception $exc) {
+        echo $exc;
+    }
   }
 
 }

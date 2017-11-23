@@ -8,45 +8,45 @@
             </td>
             <td class="estilopropio1">
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=1">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'"
                         onclick="verpuerta()">
                         PUERTAS</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=2">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         VENTANAS</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=3">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         BARANDAS</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=4">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         ESCALERAS</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=5">
                     <button class="estilo2" onclick="MantIncidencias()" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
                         onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         PORTONES</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=6">
                     <button class="estilo2" onclick="MantObservaciones()" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
                         onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         REJAS</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=7">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         TECHOS METÁLICOS</button>
                 </a>
                 <br>
-                <a href="index.php?sec=vCotizar">
+                <a href="index.php?sec=vCotizar&cat=8">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         ARMARIOS METÁLICOS</button>
                 </a>

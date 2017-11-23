@@ -3,30 +3,32 @@
         require_once '../bean/BProducto.php';
         require_once '../dao/mProducto.php';
 
-        if(!isset($_POST['enviar'])){
-            header('Location: ../vista/mantenedores/vProducto.php?res=noautorizado'); 
-        } else {
-            switch ($_POST['tipoform']){
-                case "nuevo":
-                    $objcproducto = new cProducto();
-                    $objcproducto->guardarProducto();
-                    break;
-                default:
-                header('Location: ../vista/mantenedores/vProducto.php?res=noautorizado'); 
-            }
-        }
+        // if(!isset($_POST['enviar'])){
+        //     header('Location: ../vista/mantenedores/vProducto.php?res=noautorizado'); 
+        // } else {
+        //     switch ($_POST['tipoform']){
+        //         case "nuevo":
+        //             $objcproducto = new cProducto();
+        //             $objcproducto->guardarProducto();
+        //             break;
+        //         default:
+        //         header('Location: ../vista/mantenedores/vProducto.php?res=noautorizado'); 
+        //     }
+        // }
 
 class cProducto {
     // ! SE DEBE CREAR UNA CLASE PARA MANEJAR POR BLOQUES
+    private $model;
+    private $bean;
 
-    public function __CONSTRUCT()
+    public function __construct()
     {
-       
+        $this->model=new mProducto();
+        $this->bean=new BProducto();
     }
 
     public function guardarProducto(){
-        $objBeanProducto=new BProducto();
-        $objProducto=new mProducto();            
+          
         $objBeanProducto->setNombre($_POST['nvchproducto']);
         $objBeanProducto->setDescripcion($_POST['nvchdescripcion']);
         $objBeanProducto->setDistribuidor($_POST['nvchcantidad']);        
@@ -42,6 +44,12 @@ class cProducto {
         $objProducto=new mProducto(); 
         $resultado = $objProducto->obtenerProductos();
 
+        return $resultado;
+    }
+    public function getProductForCategory($cat){
+
+        // $this->bean->setCategoria($cat);
+        $resultado = $this->model->setProductsforCategory($cat);
         return $resultado;
     }
 

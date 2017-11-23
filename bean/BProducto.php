@@ -24,6 +24,12 @@ class BProducto{
     function getDistribuidor() {
         return $this->distribuidor;
     }
+    function setCategoria($categoria) {
+        $this->categoria = $categoria;
+    }
+    function getCategoria() {
+        return $this->categoria;
+    }
 
 
 
