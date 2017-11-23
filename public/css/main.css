@@ -1,5 +1,11 @@
 /* USER */
 
+.space{
+  border-bottom: 1px solid #F5F5F5;
+  padding: top;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .data-user{
     position: fixed;
     z-index: 10;
