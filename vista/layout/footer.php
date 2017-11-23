@@ -9,6 +9,7 @@
 
 </center>
     <script type="text/javascript" src="<?= base_url_js."jquery.min.js ";?>"></script>
+    <script type="text/javascript" src="<?= base_url_js."bootstrap.min.js ";?>"></script>
     <!-- <script type="text/javascript" src="<?= base_url_js."jquery.corner.js ";?>"></script> -->
     <script type="text/javascript" src="<?= base_url_js."wow.min.js ";?>"></script>
     <script>
@@ -172,7 +173,3 @@
         </script>
         <!----//End-script---->
 
-
-        <?php 
-        
-        ?>

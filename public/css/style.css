@@ -545,21 +545,32 @@ border-radius: .5em;
             float: left;
             white-space: normal;
 }
-.ocarousel_window_slides a{
+.ocarousel_window_slides div{
 	border-left:1px solid #F2F2F2;
 	padding:0 35px;
+	cursor: pointer;
 }
-.ocarousel_window_slides a p{
+.ocarousel_window_slides div p{
   display:block;
   font-size:14px;
   color:rgba(0,0,0,0);
   float:none;
   text-align:center;	
 }
-.ocarousel_window_slides a:hover p{
- color:#e44f2b;
- text-decoration:underline;
+.ocarousel_window_slides div img{
+	width:auto;
+	height:170px;
+	margin-bottom: 10px;
+  }
+
+.ocarousel_window_slides div p{
+ color:#000;
+ font-weight: 600;
 }
+.ocarousel_window_slides div:hover p{
+	color:#C34020;
+
+   }
 .ocarousel_indicators {
     width: 100%;
 }

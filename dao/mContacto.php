@@ -51,10 +51,8 @@ class mContacto
 
         $row = mysqli_fetch_assoc($result);
         $respuesta= $row['cUsuTipo'];
-
         $_SESSION['user']= $row['cUsuUsuario'];
-
-        
+  
       }else{
 
         $respuesta=200;
