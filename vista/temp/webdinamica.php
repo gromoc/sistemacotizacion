@@ -1,32 +1,32 @@
 <html>
 <head>
-<style>
-ul {
-width: 50px;
-height: 50px;
-border: 1px solid #FFFFFF;
-}
-li {
-width: 50px;
-height: 50px;
-border: 1px solid #FFFFFF;
-}
-.fondo1 {
-background-color: #999;
-}
-.fondo2 {
-background-color: #333;
-}
-.fondo3 {
-background-color: #666;
-}
-.fondo4 {
-background-color: rgb(88, 214, 141);
-}
-.fondo5 {
-background-color: rgb(250, 210, 241);
-}
-</style>
+    <style>
+    ul {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    }
+    li {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    }
+    .fondo1 {
+    background-color: #999;
+    }
+    .fondo2 {
+    background-color: #333;
+    }
+    .fondo3 {
+    background-color: #666;
+    }
+    .fondo4 {
+    background-color: rgb(88, 214, 141);
+    }
+    .fondo5 {
+    background-color: rgb(250, 210, 241);
+    }
+    </style>
 <script>
 function cambiar_fondo_con_class(id){
 document.body.className='fondo'+id;
