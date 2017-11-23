@@ -8,45 +8,45 @@
             </td>
             <td class="estilopropio1">
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizarpuerta.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'"
                         onclick="verpuerta()">
                         PUERTAS</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizarventana.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         VENTANAS</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizarbaranda.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         BARANDAS</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizarescalera.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         ESCALERAS</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizarportones.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onclick="MantIncidencias()" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
                         onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         PORTONES</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizarrejas.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onclick="MantObservaciones()" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'"
                         onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         REJAS</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizartechos.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         TECHOS METÁLICOS</button>
                 </a>
                 <br>
-                <a href="<?php echo " http:// ".$_SERVER['HTTP_HOST']."/Cotizacion_estructuras_metalicas/vista/cotizararmarios.php ";?>">
+                <a href="index.php?sec=vCotizar">
                     <button class="estilo2" onmouseover="this.style.background='url(../imagenes/metal.png) no-repeat center center'" onmouseout="this.style.background=' url(../imagenes/metal.png)'">
                         ARMARIOS METÁLICOS</button>
                 </a>

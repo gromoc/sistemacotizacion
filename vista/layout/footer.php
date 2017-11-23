@@ -1,7 +1,8 @@
 <hr style="color: black;">
 <center>
 <br>
-
+<br>
+<br>
 <footer id="footer">
 © copyright - <a target="_blank" href="http://www.copyright.es">COTIZACIONES METALICAS 2017</a> - Todos los derechos reservados
 </footer>

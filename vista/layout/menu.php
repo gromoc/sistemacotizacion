@@ -1,4 +1,11 @@
+<div class="data-user">
+<?php
+        if(isset($_SESSION['user'])){
+            echo "BIENVENIDO: ".strtoupper($_SESSION['user']);
+        }
+        ?>
 
+</div>
 <center>
     <div class="tablainicio">
         <table class="boton8">
@@ -31,7 +38,7 @@
                     <a href="index.php?sec=vContactanos">
                         <button class="estilo1" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='white'">Contáctanos</button>
                     </a>
-                    <a href="index.php?sec=vCotizacion">
+                    <a href="<?php echo isset($_SESSION['user']) ? "index.php?sec=vCotizacion" : "index.php?sec=vLogin" ?>">
                         <button class="estilo1" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='white'">Cotizar</button>
                     </a>
                     <a href="index.php?sec=vLogin">
@@ -40,11 +47,7 @@
                 </td>
             </tr>
         </table>
-        <?php
-        if(isset($_SESSION['user'])){
-            echo "<div>BIENVENIDO".$_SESSION['user']."</div>";
-        }
-        ?>
+
       
     </div>
     <br>
