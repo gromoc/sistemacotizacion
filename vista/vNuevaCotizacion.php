@@ -22,10 +22,10 @@ include ('../controlador/cProducto.php');
 
 <?php 
 $class= new cProducto();
-$result = $class->getProductForId($_GET['pro']);
 $idUsuario=$_SESSION['id'];
-
 $result2 = $class->getUsuarioForId($idUsuario);
+$result = $class->getProductForId($_GET['pro']);
+
 
 
 $name = strtoupper($result[0]['prodNombre']);
