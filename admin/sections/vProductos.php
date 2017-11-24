@@ -1,7 +1,6 @@
 <?php 
 include ('../controlador/cProducto.php');
 $class= new cProducto();
-
 ?>
 
 <div class="panel panel-default">
@@ -14,12 +13,16 @@ $class= new cProducto();
                 <input class="form-control" type="text" name="nvchproducto" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese el nombre del producto'
                     required/>
 
-                <label for="">Descripcón</label>
-                <input class="form-control" type="text" name="nvchdescripcion" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese descripcion del producto'
+                <label for="">Alto Producto</label>
+                <input class="form-control" type="text" name="naltoproducto" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese descripcion del producto'
                     required/>
 
-                <label for="">Distribuidor</label>
-                <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor'
+                <label for="">Ancho Producto</label>
+                <input class="form-control" type="text" name="nanchoproducto" autocomplete="off" value="" placeholder='Ingrese distribuidor'
+                    style="width:100%;" required/>
+
+                    <label for="">Largo Producto</label>
+                <input class="form-control" type="text" name="nlargoproducto" autocomplete="off" value="" placeholder='Ingrese distribuidor'
                     style="width:100%;" required/>
                 <br>
                 <input type="hidden" name="tipoform" value="nuevo">
