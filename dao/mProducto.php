@@ -71,5 +71,24 @@ class mProducto
         echo $exc;
     }
   }
+  public function setProductsforCategory($idProducto){
+    try{
+      $sql = "SELECT * FROM productos p WHERE p.idProducto='$idProducto'";
+      $result=$this->db->query($sql);
+      if($result->num_rows >= 1){
+        
+        while($row = $result->fetch_assoc()){
+          $data[] = $row;
+        }
+      }else{
+
+        $data = false;
+      }
+      return $data;
+
+    }  catch (Exception $exc) {
+      echo $exc;
+  }
+}
 
 }

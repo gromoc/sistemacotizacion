@@ -52,6 +52,12 @@ class cProducto {
         $resultado = $this->model->setProductsforCategory($cat);
         return $resultado;
     }
+    public function getProductForId($pro){
+
+        // $this->bean->setCategoria($cat);
+        $resultado = $this->model->setProductsforId($pro);
+        return $resultado;
+    }
 
 }
 

@@ -12,6 +12,15 @@
         text-align: center;
     }
 </style>
+
+<?php if(isset($_GET['pro'])): ?>
+
+<?php 
+$class= new cProducto();
+$result = $class->getProductForId($_GET['pro']);
+$categoria = $result[0]['nomCartegoria'];
+?>
+
 <div class="container">
 
     <div class="row">
@@ -80,10 +89,18 @@
                                         <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor'
                                             style="width:100%;" required/>
                                 </div>
+                            </div>
+                            <div class="space"></div>
+                            <div class="row">
                                 <div class="col-md-12">
-                                    <p>LOS DATOS DEL CLIENTE SE JALARAN DE LA SESSION Y LOS DATOS DEL PRODUCTO DEL CODIGO GET RECIBIDO EL CLIENTE DEBERA INGRESAR DATOS DE SUS MEDIDAS REQUERIDAS COLOR Y OTROS DEPENDIENDO EL TIEPO DE PRODUCTO</p>
+                                    <h2>PERSONALIZAR MI PRODUCTO</h2>                              
                                 </div>
                             </div>
+                            <div class="space"></div>
+                                <div class="col-md-12">
+                                    <p>LOS DATOS DEL CLIENTE SE JALARAN DE LA SESSION Y LOS DATOS DEL PRODUCTO DEL CODIGO GET RECIBIDO EL CLIENTE DEBERA INGRESAR DATOS DE SUS MEDIDAS REQUERIDAS COLOR Y OTROS DEPENDIENDO EL TIEPO DE PRODUCTO</p>
+                                <p>PERSONALIZAR MI PRODUCTO</p>
+                                </div>
 
                             <br>
                             <input type="hidden" name="tipoform" value="nuevo">
@@ -97,3 +114,5 @@
         <!-- /.col-->
     </div>
 </div>
+
+<?php endif; ?>
