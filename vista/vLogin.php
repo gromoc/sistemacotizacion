@@ -105,5 +105,5 @@
     </center>
 </div>
 <?php 
-	$misJs=add_js("jsLogin.js");
+	$misJs=add_js("JsLogin.js");
 ?>
