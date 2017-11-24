@@ -16,7 +16,7 @@ $objBean->setClave($_POST['txtclave']);
 $resultado=$objContacto->validarAcceso($objBean);
 
 if($resultado == 1){
-    header('Location: ../vista/mantenedores/producto.php');     
+    header('Location: ../admin/');     
 }elseif($resultado == 2){
 
     header('Location: ../vista/index.php?sec=vCotizacion'); 
