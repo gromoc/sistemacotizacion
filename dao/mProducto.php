@@ -20,10 +20,11 @@ class mProducto
 
   public function createNewMessage(BProducto $OBJProducto){ 
     try {    
-      $sql="INSERT INTO productos(prodNombre,prodAlto,prodAncho)"
+      $sql="INSERT INTO productos(prodNombre,prodAlto,prodAncho, prodLargo)"
             . "VALUES('$OBJProducto->nombre',"
-            . "       '$OBJProducto->descripcion'," 
-            . "       '$OBJProducto->distribuidor')";    
+            . "       '$OBJProducto->altoproducto'," 
+            . "       '$OBJProducto->anchoproducto',"
+            . "       '$OBJProducto->largoproducto');";  
        $result=$this->db->query($sql);
        $row_cnt=$this->db->affected_rows;
     } 

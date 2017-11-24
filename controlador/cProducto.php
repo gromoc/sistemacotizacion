@@ -33,8 +33,9 @@ class cProducto {
         $objProducto=new mProducto();    
 
         $objBeanProducto->setNombre($_POST['nvchproducto']);
-        $objBeanProducto->setDescripcion($_POST['nvchdescripcion']);
-        $objBeanProducto->setDistribuidor($_POST['nvchcantidad']);        
+        $objBeanProducto->setAltoProducto($_POST['naltoproducto']);
+        $objBeanProducto->setAnchoProducto($_POST['nanchoproducto']);
+        $objBeanProducto->setLargoProducto($_POST['nlargoproducto']);        
         $resultado=$objProducto->createNewMessage($objBeanProducto);        
         if($resultado > 0){
         header('Location: ../admin/index.php?res=ok');   
