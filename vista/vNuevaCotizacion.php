@@ -1,3 +1,8 @@
+<?php 
+ob_start();
+include ('../controlador/cProducto.php');
+?>
+
 <style>
     .form-group {
         text-align: left;
@@ -18,7 +23,7 @@
 <?php 
 $class= new cProducto();
 $result = $class->getProductForId($_GET['pro']);
-$categoria = $result[0]['nomCartegoria'];
+
 ?>
 
 <div class="container">
