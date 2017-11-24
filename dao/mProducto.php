@@ -23,8 +23,7 @@ class mProducto
       $sql="INSERT INTO productos(prodNombre,prodAlto,prodAncho)"
             . "VALUES('$OBJProducto->nombre',"
             . "       '$OBJProducto->descripcion'," 
-            . "       '$OBJProducto->distribuidor',
-            NOW())";    
+            . "       '$OBJProducto->distribuidor')";    
        $result=$this->db->query($sql);
        $row_cnt=$this->db->affected_rows;
     } 
