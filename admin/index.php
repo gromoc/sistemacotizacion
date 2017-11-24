@@ -1,7 +1,11 @@
 <?php 
+<<<<<<< HEAD:vista/mantenedores/vProducto.php
 ob_start();
 include('../../util/init.php');
 include ('../../controlador/cProducto.php');
+=======
+include('../util/init.php');
+>>>>>>> c8711ef9492206ddb88de8305a0b75dd637f9ba1:admin/index.php
 
 ?>
 <!DOCTYPE html>
@@ -91,6 +95,7 @@ include ('../../controlador/cProducto.php');
 		<!--registro producto form-->
 		<div class="row">
 			<div class="col-lg-12">
+<<<<<<< HEAD:vista/mantenedores/vProducto.php
 				<div class="panel panel-default">
 					<div class="panel-heading">Registro producto</div>
 					<div class="panel-body">
@@ -116,6 +121,19 @@ include ('../../controlador/cProducto.php');
 						</div>
 					</div>
 				</div>
+=======
+			 <div id="main">
+					<?php 
+				if(isset($_GET['sec'])){
+					$url= $_GET['sec'].".php";
+				}else{
+					$url= "vProductos.php";
+				}
+				include("sections/".$url);
+				?>
+			 
+			 </div>	
+>>>>>>> c8711ef9492206ddb88de8305a0b75dd637f9ba1:admin/index.php
 			</div>
 			<!-- /.col-->
 		</div>

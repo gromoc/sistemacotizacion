@@ -41,9 +41,8 @@ class cProducto {
     }
 
     public function mostrarProducto(){
-        $objProducto=new mProducto(); 
-        $resultado = $objProducto->obtenerProductos();
-
+        
+        $resultado = $this->model->obtenerProductos();
         return $resultado;
     }
     public function getProductForCategory($cat){
