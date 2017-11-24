@@ -30,20 +30,18 @@ $class= new cProducto();
     </div>
 </div>
 
-
         <div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">Productos en almancen</div>
 					<div class="panel-body">
-						<table data-toggle="table" border="1" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1"
-						    data-pagination="true" data-sort-name="name" data-sort-order="desc">
+						<table class="table table-bordered">
 							<thead>
 								<tr>
 									<th style="text-transform: uppercase">Producto</th>
 									<th style="text-transform: uppercase">Alto Producto</th>
 									<th style="text-transform: uppercase">Ancho Producto</th>
-									<th style="text-transform: uppercase">Largo Producto</th>>
+									<th style="text-transform: uppercase">Largo Producto</th>
 								</tr>
 							</thead>
                             <?php  foreach($class->mostrarProducto() as $row):  ?>
