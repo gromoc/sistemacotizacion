@@ -48,7 +48,7 @@ $alto = $result[0]['prodAlto'];
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">Nombre cliente</label>
-                                        <input class="form-control" type="text"  value="<?= $result2[0]['nombrersocial']; ?>" readonly />
+                                        <input class="form-control" type="text" value="<?= $result2[0]['nombrersocial']; ?>" readonly />
                                     </div>
 
                                 </div>
@@ -68,9 +68,9 @@ $alto = $result[0]['prodAlto'];
                             <div class="space"></div>
                             <div class="row">
                                 <div class="col-md-12">
-                                   
+
                                     <h2>DATOS DEL PRODUCTO</h2>
-                                 
+
                                 </div>
 
                             </div>
@@ -83,22 +83,26 @@ $alto = $result[0]['prodAlto'];
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                        <label for="">CÓDIGO</label>
-                                        <input class="form-control" type="text" value="<?= $idProducto; ?>" readonly style="width:100%;" required/>
+                                    <label for="">CÓDIGO</label>
+                                    <input class="form-control" type="text" value="<?= $idProducto; ?>" readonly style="width:100%;" required/>
                                 </div>
                                 <div class="col-md-2">
+                                    <div class="form-group">
                                         <label for="">ANCHO</label>
                                         <input class="form-control" type="text" value="<?= $ancho; ?>" readonly/>
+                                    </div>
                                 </div>
                                 <div class="col-md-2">
+                                    <div class="form-group">
                                         <label for="">ALTO</label>
                                         <input class="form-control" type="text" value="<?= $alto; ?>" readonly/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="space"></div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2>PERSONALIZAR MI PRODUCTO</h2>                              
+                                    <h2>PERSONALIZAR MI PRODUCTO</h2>
                                 </div>
                             </div>
                             <div class="space"></div>
@@ -107,8 +111,48 @@ $alto = $result[0]['prodAlto'];
                                 <div class="col-md-3">
                                     <img class="img-center img-responsive" src="data:image/jpg;base64,<?php echo base64_encode($result[0]['prodImg']); ?>" alt="">
                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="">ANCHO (m)</label>
+                                                <input class="form-control" type="text" value="<?= $ancho; ?>" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="">ALTO (m)</label>
+                                                <input class="form-control" type="text" value="<?= $alto; ?>" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="">COLOR </label>
+                                                <input class="form-control" type="color" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="space"></div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">DETALLE </label>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="form-group">
+                                              
+                                                <textarea name="" style="width:100%;heigth:35px !important"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            
+
 
                             <br>
                             <input type="hidden" name="tipoform" value="nuevo">
