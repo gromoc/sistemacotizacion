@@ -1,10 +1,8 @@
 <?php 
-
+ob_start();
 include ('../controlador/cProducto.php');
 ?>
-<?php echo "hola"; ?>
 
-<?php echo $_GET['cat']; ?>
 <?php if(isset($_GET['cat'])): ?>
 
 <?php 

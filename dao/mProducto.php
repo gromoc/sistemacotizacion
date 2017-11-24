@@ -71,7 +71,7 @@ class mProducto
         echo $exc;
     }
   }
-  public function setProductsforCategory($idProducto){
+  public function setProductsforId($idProducto){
     try{
       $sql = "SELECT * FROM productos p WHERE p.idProducto='$idProducto'";
       $result=$this->db->query($sql);
