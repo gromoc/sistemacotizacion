@@ -17,7 +17,7 @@ include ('../controlador/cProducto.php');
         text-align: center;
     }
 </style>
-
+<?php if(isset($_SESSION['id'])): ?>
 <?php if(isset($_GET['pro'])): ?>
 
 <?php 
@@ -31,6 +31,12 @@ $idProducto= $result[0]['idProducto'];
 $ancho = $result[0]['prodAncho'];
 $alto = $result[0]['prodAlto'];
 $categoria = $result[0]['idCategoria'];
+
+
+$nomPer = $result2[0]['nombrersocial'];
+$numero = $result2[0]['numero'];
+$dni = $result2[0]['dniruc'];
+
 ?>
 
 <div class="container">
@@ -48,20 +54,20 @@ $categoria = $result[0]['idCategoria'];
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">Nombre cliente</label>
-                                        <input class="form-control" type="text" value="<?= $result2[0]['nombrersocial']; ?>" readonly />
+                                        <input class="form-control" type="text" value="<?= $nomPer; ?>" readonly />
                                     </div>
 
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Teléfono</label>
-                                        <input class="form-control" type="text" value="<?= $result2[0]['numero']; ?>" readonly />
+                                        <input class="form-control" type="text" value="<?= $numero; ?>" readonly />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Dni</label>
-                                        <input class="form-control" type="text" value="<?= $result2[0]['dniruc']; ?>" readonly/>
+                                        <input class="form-control" type="text" value="<?= $dni; ?>" readonly/>
                                     </div>
                                 </div>
                             </div>
@@ -189,4 +195,13 @@ $categoria = $result[0]['idCategoria'];
     </div>
 </div>
 
+
 <?php endif; ?>
+
+<?php else: echo('<script>window.location.replace("index.php?sec=vLogin");</script>'); ?>
+
+<?php endif; ?>
+
+<?php
+ob_end_flush();
+?>

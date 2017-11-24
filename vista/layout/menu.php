@@ -38,7 +38,7 @@
                     <a href="index.php?sec=vContactanos">
                         <button class="estilo1" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='white'">Contáctanos</button>
                     </a>
-                    <a href="<?php echo isset($_SESSION['user']) ? "index.php?sec=vCotizacion" : "index.php?sec=vLogin" ?>">
+                    <a href="index.php?sec=vCotizacion">
                         <button class="estilo1" onmouseover="this.style.background='#CCCCFF'" onmouseout="this.style.background='white'">Cotizar</button>
                     </a>
                     <a href="index.php?sec=vLogin">

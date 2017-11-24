@@ -72,7 +72,7 @@ $categoria = $result[0]['nomCartegoria'];
                 <div class="detalle">
                     <p><b>Ancho: </b><span class="ancho">50 cm</span></p>
                     <p><b>Alto: </b><span class="alto">50 cm</span></p>
-                   
+                    
                 </div>
                 <div class="coti">
                     <a class="btn btn-default" href="">Solicitar Cotización</a>
