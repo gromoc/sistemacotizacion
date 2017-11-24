@@ -23,7 +23,9 @@ include ('../controlador/cProducto.php');
 <?php 
 $class= new cProducto();
 $result = $class->getProductForId($_GET['pro']);
-$result2 = $class->getUsuarioForId($_SESSION['id']);
+$idUsuario=$_SESSION['id'];
+
+$result2 = $class->getUsuarioForId($idUsuario);
 
 
 $name = strtoupper($result[0]['prodNombre']);
