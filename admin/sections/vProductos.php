@@ -2,9 +2,8 @@
 include ('../controlador/cProducto.php');
 $class= new cProducto();
 $result = $class->mostrarProducto();
-print_r($result);
 foreach($result as $row){
-    echo "<p>".$result['prodNombre']."</p>";
+    echo "<p>".$row['prodNombre']."</p>";
 }
 ?>
 
