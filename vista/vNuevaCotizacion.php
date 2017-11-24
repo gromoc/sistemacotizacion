@@ -30,7 +30,7 @@ $name = strtoupper($result[0]['prodNombre']);
 $idProducto= $result[0]['idProducto'];
 $ancho = $result[0]['prodAncho'];
 $alto = $result[0]['prodAlto'];
-
+$categoria = $result[0]['idCategoria'];
 ?>
 
 <div class="container">
@@ -131,21 +131,43 @@ $alto = $result[0]['prodAlto'];
                                                 <input class="form-control" type="color" />
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="space"></div>
 
+                                    <div class="row">
+                                        <?php 
+                                        if($categoria == 4):
+                                        ?>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="">PASOS </label>
+                                                <input class="form-control" type="text" />
+                                            </div>
+                                        </div>
+
+                                        <?php endif; ?>
+                                        <?php 
+                                        if($categoria == 8):
+                                        ?>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="">FONDO </label>
+                                                <input class="form-control" type="text" />
+                                            </div>
+                                        </div>
+
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="space"></div>
                                     <div class="row">
 
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="">DETALLE </label>
-
                                             </div>
                                         </div>
                                         <div class="col-md-10">
                                             <div class="form-group">
-                                              
                                                 <textarea name="" style="width:100%;heigth:35px !important"></textarea>
                                             </div>
                                         </div>
