@@ -20,7 +20,7 @@ class mProducto
 
   public function createNewMessage(BProducto $OBJProducto){ 
     try {    
-      $sql="INSERT INTO producto(nombre,descripcion,distribuidor, fechacrea)"
+      $sql="INSERT INTO productos(prodNombre,prodAlto,prodAncho)"
             . "VALUES('$OBJProducto->nombre',"
             . "       '$OBJProducto->descripcion'," 
             . "       '$OBJProducto->distribuidor',
