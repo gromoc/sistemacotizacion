@@ -24,6 +24,11 @@ include ('../controlador/cProducto.php');
 $class= new cProducto();
 $result = $class->getProductForId($_GET['pro']);
 
+$name = $result[0]['prodNombre'];
+$idProducto= $result[0]['idProducto'];
+$ancho = $result[0]['prodAncho'];
+$alto = $result[0]['prodAlto'];
+
 ?>
 
 <div class="container">
@@ -75,24 +80,20 @@ $result = $class->getProductForId($_GET['pro']);
                                 <div class="col-md-5">
                                     <div class="form-group">
                                         <label for="">NOMBRE DEL PRODUCTO</label>
-                                        <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor'
-                                            style="width:100%;" required/>
+                                        <input class="form-control" type="text" value="<?= $name; ?>" readonly style="width:100%;" required/>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                         <label for="">CÓDIGO</label>
-                                        <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor'
-                                            style="width:100%;" required/>
+                                        <input class="form-control" type="text" value="<?= $idProducto; ?>" readonly style="width:100%;" required/>
                                 </div>
                                 <div class="col-md-2">
                                         <label for="">ANCHO</label>
-                                        <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor'
-                                            style="width:100%;" required/>
+                                        <input class="form-control" type="text" value="<?= $ancho; ?>" readonly/>
                                 </div>
                                 <div class="col-md-2">
                                         <label for="">ALTO</label>
-                                        <input class="form-control" type="text" name="nvchcantidad" autocomplete="off" value="" placeholder='Ingrese distribuidor'
-                                            style="width:100%;" required/>
+                                        <input class="form-control" type="text" value="<?= $alto; ?>" readonly/>
                                 </div>
                             </div>
                             <div class="space"></div>
