@@ -1,5 +1,7 @@
 <?php 
+ob_start();
 include('../../util/init.php');
+include ('../../controlador/cProducto.php');
 
 ?>
 <!DOCTYPE html>
@@ -8,8 +10,6 @@ include('../../util/init.php');
 	<!-- PERSONALIZADO -->
 	<link href="<?= base_url_css."bootstrap.css "; ?>" rel="stylesheet">
 	<link href="<?= base_url_css."main.css "; ?>" rel="stylesheet">
-
-
 </head>
 <body>
 
@@ -101,7 +101,7 @@ include('../../util/init.php');
 								<input class="form-control" type="text" name="nvchproducto" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese el nombre del producto'
 								    required/>
 
-								<label for="">Descripcón</label>
+								<label for="">Descripción</label>
 								<input class="form-control" type="text" name="nvchdescripcion" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese descripcion del producto'
 								    required/>
 
