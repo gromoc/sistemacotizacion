@@ -1,12 +1,5 @@
 <?php 
-<<<<<<< HEAD:vista/mantenedores/vProducto.php
-ob_start();
-include('../../util/init.php');
-include ('../../controlador/cProducto.php');
-=======
 include('../util/init.php');
->>>>>>> c8711ef9492206ddb88de8305a0b75dd637f9ba1:admin/index.php
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
