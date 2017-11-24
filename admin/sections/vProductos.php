@@ -1,3 +1,13 @@
+<?php 
+include ('../controlador/cProducto.php');
+$class= new cProducto();
+$result = $class->mostrarProducto();
+print_r($result);
+foreach($result as $row){
+    echo "<p>".$result['prodNombre']."</p>";
+}
+?>
+
 <div class="panel panel-default">
     <div class="panel-heading">Registro producto</div>
     <div class="panel-body">
