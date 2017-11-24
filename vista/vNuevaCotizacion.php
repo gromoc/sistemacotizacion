@@ -23,8 +23,10 @@ include ('../controlador/cProducto.php');
 <?php 
 $class= new cProducto();
 $result = $class->getProductForId($_GET['pro']);
+$result2 = $class->getUsuarioForId($_SESSION['id']);
 
-$name = $result[0]['prodNombre'];
+
+$name = strtoupper($result[0]['prodNombre']);
 $idProducto= $result[0]['idProducto'];
 $ancho = $result[0]['prodAncho'];
 $alto = $result[0]['prodAlto'];
@@ -46,23 +48,20 @@ $alto = $result[0]['prodAlto'];
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">Nombre cliente</label>
-                                        <input class="form-control" type="text" name="nvchproducto" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese el nombre del producto'
-                                            required/>
+                                        <input class="form-control" type="text"  value="<?= $result2[0]['nombrersocial']; ?>" readonly />
                                     </div>
 
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Teléfono</label>
-                                        <input class="form-control" type="text" name="nvchdescripcion" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese descripcion del producto'
-                                            required/>
+                                        <input class="form-control" type="text" value="<?= $result2[0]['numero']; ?>" readonly />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Dni</label>
-                                        <input class="form-control" type="text" name="nvchdescripcion" autocomplete="off" value="" style="width:100%;" placeholder='Ingrese descripcion del producto'
-                                            required/>
+                                        <input class="form-control" type="text" value="<?= $result2[0]['dniruc']; ?>" readonly/>
                                     </div>
                                 </div>
                             </div>
@@ -103,10 +102,13 @@ $alto = $result[0]['prodAlto'];
                                 </div>
                             </div>
                             <div class="space"></div>
-                                <div class="col-md-12">
-                                    <p>LOS DATOS DEL CLIENTE SE JALARAN DE LA SESSION Y LOS DATOS DEL PRODUCTO DEL CODIGO GET RECIBIDO EL CLIENTE DEBERA INGRESAR DATOS DE SUS MEDIDAS REQUERIDAS COLOR Y OTROS DEPENDIENDO EL TIEPO DE PRODUCTO</p>
-                                <p>PERSONALIZAR MI PRODUCTO</p>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="img-center img-responsive" src="data:image/jpg;base64,<?php echo base64_encode($result[0]['prodImg']); ?>" alt="">
                                 </div>
+                            </div>
+                            
 
                             <br>
                             <input type="hidden" name="tipoform" value="nuevo">

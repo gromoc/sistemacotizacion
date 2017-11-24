@@ -43,7 +43,7 @@ class mContacto
       $usuario=$OBJDatos->usuario;
       $clave = $OBJDatos->clave;
 
-      $sql="SELECT cUsuUsuario, cUsuTipo FROM usuario WHERE cUsuUsuario='$usuario' AND cUsuClave='$clave'";
+      $sql="SELECT nPerCodigo, cUsuUsuario, cUsuTipo FROM usuario WHERE cUsuUsuario='$usuario' AND cUsuClave='$clave'";
 
       $result=$this->db->query($sql);
 
@@ -52,6 +52,7 @@ class mContacto
         $row = mysqli_fetch_assoc($result);
         $respuesta= $row['cUsuTipo'];
         $_SESSION['user']= $row['cUsuUsuario'];
+        $_SESSION['id']= $row['nPerCodigo'];
   
       }else{
 

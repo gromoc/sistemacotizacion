@@ -58,6 +58,11 @@ class cProducto {
         $resultado = $this->model->setProductsforId($pro);
         return $resultado;
     }
+    public function getUsuarioForId($id){
+
+        $resultado = $this->model->setUsuarioForId($id);
+        return $resultado;
+    }
 
 }
 

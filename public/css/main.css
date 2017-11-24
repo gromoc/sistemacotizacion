@@ -6,6 +6,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.img-center{
+  display: block;
+  margin: auto;
+}
 .data-user{
     position: fixed;
     z-index: 10;
