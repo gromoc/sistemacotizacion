@@ -36,18 +36,19 @@ class mProducto
 
   public function obtenerProductos(){
     try{
-        $sql = "SELECT * FROM producto;";
+        $sql = "SELECT * FROM productos;";
         $result=$this->db->query($sql);
-        $resultado = array();
-        foreach($$result->fetchAll(PDO::FETCH_OBJ) as $r)
-        {
-          $OBJProducto = new BProducto();
-          $OBJProducto->setNombre($r->nombre);
-          $OBJProducto->setDescripcion($r->descripcion);
-          $OBJProducto->setDistribuidor($r->distribuidor);
-          $resultado[] = $OBJProducto;          
+        if($result->num_rows >= 1){
+          
+          while($row = $result->fetch_assoc()){
+            $data[] = $row;
+          }
+        }else{
+
+          $data = false;
         }
-        return $resultado;
+        return $data;
+        
       }  catch (Exception $exc) {
         echo $exc;
     }
