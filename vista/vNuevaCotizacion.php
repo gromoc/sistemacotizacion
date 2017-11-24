@@ -17,7 +17,7 @@ include ('../controlador/cProducto.php');
         text-align: center;
     }
 </style>
-
+<?php if(isset($_SESSION['id'])): ?>
 <?php if(isset($_GET['pro'])): ?>
 
 <?php 
@@ -195,4 +195,13 @@ $dni = $result2[0]['dniruc'];
     </div>
 </div>
 
+
 <?php endif; ?>
+
+<?php else: echo('<script>window.location.replace("index.php?sec=vLogin");</script>'); ?>
+
+<?php endif; ?>
+
+<?php
+ob_end_flush();
+?>
