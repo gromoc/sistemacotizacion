@@ -45,6 +45,7 @@
                                 size="30">
                         </div>
                         <div class="form-group text-center" >
+                            <input type="hidden" name="tipoform" value="entrar">
                             <input type="submit" name="acceso" value="entrar">
                             <!-- <a style="align-content: center; text-align: center; margin: auto;" class="boton" onmouseover="this.style.background='#CCCCFF'"
                                 onmouseout="this.style.background='#757575'" style="width:70px; height:70px" title="Ingresar al Sistema"
