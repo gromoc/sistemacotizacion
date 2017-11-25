@@ -15,9 +15,14 @@
         <div style="padding-top:50px;" class="main-login">
 
             <?php    
-                    if(isset($_GET['mensaje']))
+                    if(isset($_GET['msj']))
                     {
-                    echo $_GET['mensaje'] ;   
+                        if($_GET['msj']='ok'){
+                            $mensaje= "<div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Se registro el usuario correctamente</div>";
+                        }else{
+                            $mensaje= "<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Hubo un error al momento de registrar</div>";
+                        }
+                  
                     }
                 ?>
 
@@ -26,6 +31,7 @@
                     <h4 type="text" class="text_menu2" style='text-align: center'>INGRESAR AL SISTEMA</h4>
                 </div>
                 <div class="panel-body">
+                <?php if(isset($mensaje)){ echo $mensaje; } ?>
                     <form action="../controlador/cRegistro.php" method="POST">
                         <div class="form-group" align="center">
                             <input type="hidden" name="op">
@@ -66,8 +72,8 @@
                     <h4 type="text" class="text_menu2" style='text-align: center'>REGISTRESE AL SISTEMA</h4>
                 </div>
                 <div class="panel-body">
-<<<<<<< HEAD
                     <form id="frmRegistro" action="../controlador/cRegistro.php" method="POST" >
+                        
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nombre o Razon Social</label>
                             <input type="text" class="form-control" name="txtnombrersocial" placeholder="Nombre o Razon social" required autofocus>
@@ -81,22 +87,6 @@
                             <label for="exampleInputEmail1">Email</label>
                             <input type="email" class="form-control" name="txtemail" placeholder="Email" required>
                         </div>
-=======
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre o Razon Social</label>
-                        <input type="text" class="form-control" name="txtnombrersocial" placeholder="Nombre o Razon social" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">DNI o RUC de la empresa</label>
-                        <input type="text" class="form-control" name="txtdniruc" placeholder="DNI o RUC" required autofocus>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="text" class="form-control" name="txtemail" placeholder="Email" required>
-                    </div>
->>>>>>> dcb418c33efac7bc863ba88c068de981cd85d33f
 
                         <div class="form-group">
                             <label for="exampleInputEmail1">Telefono</label>
@@ -108,7 +98,6 @@
                             <input type="text"  class="form-control" name="txtnomusuario" placeholder="Nombre de ingreso" required autofocus>
                         </div>
 
-<<<<<<< HEAD
                         <div class="form-group">
                             <label for="exampleInputEmail1">Contraseña Usuario</label>
                             <input type="password"  class="form-control" name="txtpassusuario" placeholder="Contraseña" required autofocus>
@@ -118,16 +107,6 @@
                             <button type="submit" class="btn btn-default btn-block" title="Salir">REGISTRAR</a>
                         </div>
                     </form>
-=======
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Contraseña Usuario</label>
-                        <input type="password" name="txtpassusuario" class="form-control" placeholder="Contraseña" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <input class="btn btn-default btn-block" title="Salir" type="submit" value="REGISTRAR">
-                    </div>
-                </form>
->>>>>>> dcb418c33efac7bc863ba88c068de981cd85d33f
                 </div>
             </div>
             <br>

@@ -10,17 +10,27 @@ class mUsuario
 
     public function registrarUsuario(BRegistro $OBJRegistro){ 
         try {
-            $sql = "INSERT INTO persona (nombresocial, dniruc, email, numero) "
-            . "VALUES ('$OBJRegistro->nombreruc', '$OBJRegistro->dniruc', '$OBJRegistro->email' ,'$OBJRegistro->telefono'); "
-            . "INSERT INTO usuario (nPerCodigo, cUsuUsuario, cUsuClave, cUsuTipo) "
+            $sql = "INSERT INTO persona (nombrersocial, dniruc, email, numero) "
+            . "VALUES ('$OBJRegistro->nombreruc', '$OBJRegistro->dniruc', '$OBJRegistro->email' ,'$OBJRegistro->telefono');";
+
+
+            $sql2="INSERT INTO usuario (nPerCodigo, cUsuUsuario, cUsuClave, cUsuTipo) "
             . "VALUES (LAST_INSERT_ID(), '$OBJRegistro->usuario', '$OBJRegistro->clave' ,'2');";
             $result = $this->db->query($sql);
-            $row_cnt = $this->db->affeted_rows;
+            $result2 = $this->db->query($sql2);
+
+            if($result2){
+                $data=1;
+            }else{
+                $data=0; 
+            }
+            
+
         }
         catch (Exception $exc) {
             echo $exc;
         }
-        return $row_cnt;
+        return $data;
     }
 
 

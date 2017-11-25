@@ -66,9 +66,9 @@ class cRegistro{
         $objBeanRegistro->setClave($_POST['txtpassusuario']);
         $resultado=$objUsuario->registrarUsuario($objBeanRegistro);
         if($resultado > 0){
-            header('Location:../vista/vLogin.php?registro=ok');   
+            header('Location:../vista/index.php?sec=vLogin&msj=ok');   
         }else{
-            header('Location:../vista/vLogin.php?registro=error');   
+            header('Location:../vista/index.php?sec=vLogin&msj=error');   
         }
     }
 
