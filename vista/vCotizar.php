@@ -21,7 +21,7 @@ $categoria = $result[0]['nomCartegoria'];
                     <div class="ocarousel example_photos" data-ocarousel-perscroll="3">
                         <div class="ocarousel_window">
                             <?php foreach($result as $row): ?>
-                                <div class="productoCont" data-id="<?php echo $row['idProducto']; ?>" data-name="<?php echo $row['prodNombre']; ?>" data-alto="<?php echo $row['prodAlto']; ?>" data-ancho="<?php echo $row['prodAncho']; ?>">
+                                <div class="productoCont" data-session="<?php echo isset($_SESSION['id']) ? "1" : "0" ?>" data-id="<?php echo $row['idProducto']; ?>" data-name="<?php echo $row['prodNombre']; ?>" data-alto="<?php echo $row['prodAlto']; ?>" data-ancho="<?php echo $row['prodAncho']; ?>">
                                     <img  src="data:image/jpg;base64,<?php echo base64_encode($row['prodImg']); ?>" />
                                     <p class="name"><?php echo strtoupper($row['prodNombre']); ?></p>
                                 </div>
@@ -58,7 +58,36 @@ $categoria = $result[0]['nomCartegoria'];
     display: block;
 }
 </style>
-<div id="detaProducto" class="modal" tabindex="-1" role="dialog">
+<style>
+/* HOVER STYLES */
+div#pop-up {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+</style>
+
+<!-- HIDDEN / POP-UP DIV -->
+<div id="pop-up">
+    <legend class="titulo">TITULO</legend>
+    <hr>
+    <p>Productos de calidad y ha bajo costo solo en estructuras metálicas SA</p>
+    <div class="detalle">
+        <p><b>Ancho: </b><span class="ancho">50 cm</span></p>
+        <p><b>Alto: </b><span class="alto">50 cm</span></p>
+        
+    </div>
+</div>
+
+
+
+<!-- <div id="detaProducto" class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -85,7 +114,7 @@ $categoria = $result[0]['nomCartegoria'];
 
     </div>
   </div>
-</div>
+</div> -->
 
 <?php 
 	$misJs=add_js("JsCotizacion.js");
