@@ -1,7 +1,6 @@
-
 <?php 
-session_start();
 ob_start();
+session_start();
 require_once '../bean/BRegistro.php';
 require_once '../dao/mContacto.php';
 require_once '../dao/mUsuario.php';
@@ -19,11 +18,7 @@ if(isset($_POST['tipoform'])){
         default:
             header('Location: ../vista/vLogin.php'); 
     }
-
-
-
 }
-
 
 class cRegistro{
     private $model;
