@@ -125,18 +125,21 @@ $dni = $result2[0]['dniruc'];
                                             <div class="form-group">
                                                 <label for="">ANCHO (m)</label>
                                                 <input class="form-control" type="text" value="<?= $ancho; ?>" />
+                                                <small>Ingrese su medida</small>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="">ALTO (m)</label>
                                                 <input class="form-control" type="text" value="<?= $alto; ?>" />
+                                                <small>Ingrese su medida</small>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="">COLOR </label>
                                                 <input class="form-control" type="color" />
+                                                <small>Ingrese su color</small>
                                             </div>
                                         </div>
                                     </div>
@@ -182,8 +185,6 @@ $dni = $result2[0]['dniruc'];
                                     </div>
                                 </div>
                             </div>
-
-
                             <br>
                             <input type="hidden" name="tipoform" value="nuevo">
                             <button type="submit" id="enviar" name="enviar" class="btn btn-default">Guardar</button>

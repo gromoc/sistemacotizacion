@@ -66,7 +66,7 @@
                     <h4 type="text" class="text_menu2" style='text-align: center'>REGISTRESE AL SISTEMA</h4>
                 </div>
                 <div class="panel-body">
-
+                <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nombre o Razon Social</label>
                         <input type="text" class="form-control" name="txtnombrersocial" placeholder="Nombre o Razon social" required autofocus>
@@ -96,8 +96,9 @@
                         <input type="password" name="txtpassusuario" class="form-control" placeholder="Contraseña" required autofocus>
                     </div>
                     <div class="form-group">
-                        <a class="btn btn-default btn-block" title="Salir" href="javascript:registrar()">REGISTRAR</a>
+                        <input class="btn btn-default btn-block" title="Salir" type="submit" value="REGISTRAR">
                     </div>
+                </form>
                 </div>
             </div>
             <br>
