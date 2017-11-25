@@ -93,7 +93,7 @@ class mProducto
 }
 public function setUsuarioForId($idUser){
   try{
-    $sql = "SELECT * FROM usuario u INNER JOIN persona p ON u.nPerCodigo = p.nPerCodigo WHERE P.nPerCodigo='$idUser'";
+    $sql = "SELECT * FROM usuario u INNER JOIN persona p ON u.nPerCodigo = p.nPerCodigo WHERE p.nPerCodigo='$idUser'";
     $result=$this->db->query($sql);
     if($result->num_rows >= 1){
       

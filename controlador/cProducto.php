@@ -3,7 +3,7 @@
         require_once '../bean/BProducto.php';
         require_once '../dao/mProducto.php';
 
-         if(isset($_POST['enviar'])){
+         if(isset($_POST['tipoform'])){
             $objcproducto = new cProducto();
          /*    header('Location: ../vista/mantenedores/vProducto.php?res=noautorizado'); 
                

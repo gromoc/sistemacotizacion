@@ -66,38 +66,40 @@
                     <h4 type="text" class="text_menu2" style='text-align: center'>REGISTRESE AL SISTEMA</h4>
                 </div>
                 <div class="panel-body">
+                    <form id="frmRegistro" action="../controlador/cRegistro.php" method="POST" >
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre o Razon Social</label>
+                            <input type="text" class="form-control" name="txtnombrersocial" placeholder="Nombre o Razon social" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">DNI o RUC de la empresa</label>
+                            <input type="text" class="form-control" name="txtdniruc" placeholder="DNI o RUC" required autofocus>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre o Razon Social</label>
-                        <input type="text" class="form-control" name="txtnombrersocial" placeholder="Nombre o Razon social" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">DNI o RUC de la empresa</label>
-                        <input type="text" class="form-control" name="txtdniruc" placeholder="DNI o RUC" required autofocus>
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" name="txtemail" placeholder="Email" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="text" class="form-control" name="txtemail" placeholder="Email" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Telefono</label>
+                            <input type="text" class="form-control" name="txttelefono" placeholder="Telefono" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Telefono</label>
-                        <input type="text" class="form-control" name="txttelefono" placeholder="Telefono" required>
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre Usuario</label>
+                            <input type="text"  class="form-control" name="txtnomusuario" placeholder="Nombre de ingreso" required autofocus>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre Usuario</label>
-                        <input type="text" name="txtnomusuario" class="form-control" placeholder="Nombre de ingreso" required autofocus>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Contraseña Usuario</label>
-                        <input type="password" name="txtpassusuario" class="form-control" placeholder="Contraseña" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <a class="btn btn-default btn-block" title="Salir" href="javascript:registrar()">REGISTRAR</a>
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Contraseña Usuario</label>
+                            <input type="password"  class="form-control" name="txtpassusuario" placeholder="Contraseña" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="tipoform" value="registro">
+                            <button type="submit" class="btn btn-default btn-block" title="Salir">REGISTRAR</a>
+                        </div>
+                    </form>
                 </div>
             </div>
             <br>
