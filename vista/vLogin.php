@@ -107,8 +107,7 @@
                             <label for="exampleInputEmail1">Nombre Usuario</label>
                             <input type="text"  class="form-control" name="txtnomusuario" placeholder="Nombre de ingreso" required autofocus>
                         </div>
-
-<<<<<<< HEAD
+ 
                         <div class="form-group">
                             <label for="exampleInputEmail1">Contraseña Usuario</label>
                             <input type="password"  class="form-control" name="txtpassusuario" placeholder="Contraseña" required autofocus>
@@ -118,16 +117,6 @@
                             <button type="submit" class="btn btn-default btn-block" title="Salir">REGISTRAR</a>
                         </div>
                     </form>
-=======
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Contraseña Usuario</label>
-                        <input type="password" name="txtpassusuario" class="form-control" placeholder="Contraseña" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <input class="btn btn-default btn-block" title="Salir" type="submit" value="REGISTRAR">
-                    </div>
-                </form>
->>>>>>> dcb418c33efac7bc863ba88c068de981cd85d33f
                 </div>
             </div>
             <br>
