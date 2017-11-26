@@ -4,7 +4,7 @@ $class= new cProducto();
 ?>
 
 <div class="panel panel-default">
-    <div class="panel-heading">Registro producto</div>
+    <div class="panel-heading">Mantenimiento de Producto</div>
     <div class="panel-body">
         <div class="col-md-6">
             <form action="../controlador/cProducto.php" method="POST" class="pure-form pure-form-stacked" style="margin-bottom:30px;"

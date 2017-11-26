@@ -7,6 +7,8 @@ include('../util/init.php');
 	<!-- PERSONALIZADO -->
 	<link href="<?= base_url_css."bootstrap.css "; ?>" rel="stylesheet">
 	<link href="<?= base_url_css."main.css "; ?>" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 </head>
 <body>
 
@@ -26,39 +28,19 @@ include('../util/init.php');
 					<ul class="nav navbar-nav">
 						<li>
 							<a>
-								ADMIN PANEL
+								HOLA ADMIN
 							</a>
 						</li>
 						<li class="active">
-							<a href="#">Home
+							<a href="index.php">Productos
 								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span>
 							</a>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios
-								<span class="caret"></span>
-								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span>
-							</a>
-							<ul class="dropdown-menu forAnimate" role="menu">
-								<li>
-									<a href="{{URL::to('createusuario')}}">Crear</a>
-								</li>
-								<li>
-									<a href="#">Modificar</a>
-								</li>
-								<li>
-									<a href="#">Reportar</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">Informes</a>
-								</li>
-							</ul>
-						</li>
+						<li>
+						<a href="index.php?sec=vUsuarios">Usuarios
+							<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
+						</a>
+					</li>
 						<li>
 							<a href="#">Libros
 								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
@@ -74,12 +56,11 @@ include('../util/init.php');
 			</div>
 		</nav>
 		</div>
-
 	</div>
 	<div class="col-md-10 main">
 		<div class="row">
 			<ol class="breadcrumb">
-				<li class="active">Registro de Productos</li>
+				<li class="active">Panel de Administracion</li>
 			</ol>
 		</div>
 		<!--/.row-->
@@ -121,6 +102,34 @@ include('../util/init.php');
         }
     ?>
 	</div>
+
+
+<!-- 
+	<li  class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios
+								<span class="caret"></span>
+								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span>
+							</a>
+							<ul class="dropdown-menu forAnimate" role="menu">
+								<li>
+									<a href="{{URL::to('createusuario')}}">Crear</a>
+								</li>
+								<li>
+									<a href="#">Modificar</a>
+								</li>
+								<li>
+									<a href="#">Reportar</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Informes</a>
+								</li>
+							</ul>
+						</li> -->
 </body>
 
 </html>

@@ -1,7 +1,6 @@
-
 <?php 
-session_start();
 ob_start();
+session_start();
 require_once '../bean/BRegistro.php';
 require_once '../dao/mContacto.php';
 require_once '../dao/mUsuario.php';
@@ -16,14 +15,13 @@ if(isset($_POST['tipoform'])){
         case "registro":
             $obcregistro->registrarUsuario();
             break;
+        case "registroadmin":
+            $obcregistro->registrarUsuarioAdmin();
+            break;
         default:
             header('Location: ../vista/vLogin.php'); 
     }
-
-
-
 }
-
 
 class cRegistro{
     private $model;
@@ -66,10 +64,33 @@ class cRegistro{
         $objBeanRegistro->setClave($_POST['txtpassusuario']);
         $resultado=$objUsuario->registrarUsuario($objBeanRegistro);
         if($resultado > 0){
-            header('Location:../vista/vLogin.php?registro=ok');   
+            header('Location:../vista/index.php?sec=vLogin&msj=ok');   
         }else{
-            header('Location:../vista/vLogin.php?registro=error');   
+            header('Location:../vista/index.php?sec=vLogin&msj=error');   
         }
+    }
+
+    public function registrarUsuarioAdmin(){
+        $objBeanRegistro= new BRegistro();
+        $objUsuario = new mUsuario();
+
+        $objBeanRegistro->setNombreruc($_POST['txtnombrersocial']);
+        $objBeanRegistro->setDniRuc($_POST['txtdniruc']);
+        $objBeanRegistro->setEmail($_POST['txtemail']);
+        $objBeanRegistro->setTelefono($_POST['txttelefono']);
+        $objBeanRegistro->setUsuario($_POST['txtnomusuario']);  
+        $objBeanRegistro->setClave($_POST['txtpassusuario']);
+        $resultado=$objUsuario->registrarUsuario($objBeanRegistro);
+        if($resultado > 0){
+            header('Location:../admin/index.php?sec=vUsuarios&msj=ok');   
+        }else{
+            header('Location:../admin/index.php?sec=vUsuarios&msj=error');   
+        }
+    }
+
+    public function obtenerUsuarios(){
+        $objUsuario = new mUsuario();
+        return $objUsuario->resultadoUsuarios();
     }
 
 

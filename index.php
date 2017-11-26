@@ -2,5 +2,5 @@
 <?php
   
     include('util/init.php');
-    header ("Location:".base_url."vista/");
+    header("Location:".base_url."vista/");
 ?>
