@@ -32,17 +32,17 @@ include('../util/init.php');
 							</a>
 						</li>
 						<li class="active">
-							<a href="index.php">Productos
+							<a href="?">Productos
 								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span>
 							</a>
 						</li>
 						<li>
-						<a href="index.php?sec=vUsuarios">Usuarios
+						<a href="?sec=vUsuarios">Usuarios
 							<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
 						</a>
 					</li>
 						<li>
-							<a href="#">Libros
+							<a href="?sec=vCotizar">Cotizar
 								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
 							</a>
 						</li>

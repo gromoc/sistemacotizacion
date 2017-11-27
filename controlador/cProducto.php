@@ -12,6 +12,10 @@
                 case "nuevo":
                      $objcproducto->guardarProducto();
                      break;
+                case "actualizarproducto":
+                     $objcproducto->actualizarProductoAdmin();
+                     break;     
+                
                 default:
                header('Location: ../admin/sections/vProductos.php?res=noautorizado'); 
              }
@@ -44,7 +48,7 @@ class cProducto {
         }   
     }
 
-    public function mostrarProducto(){
+    public function mostsetLargoProductorarProducto(){
         
         $resultado = $this->model->obtenerProductos();
         return $resultado;
@@ -65,6 +69,48 @@ class cProducto {
 
         $resultado = $this->model->setUsuarioForId($id);
         return $resultado;
+    }
+
+    public function mostrarProducto(){
+        
+        $resultado = $this->model->obtenerProductos();
+        return $resultado;
+    }
+
+    public function mostrarProductoEditar($idproducto){
+        $resultado = $this->model->obtenerInfoProducto($idproducto);
+        $r = $resultado->fetch_object();
+        $this->bean->setId($r->idProducto);
+        $this->bean->setNombre($r->prodNombre);
+        $this->bean->setAltoProducto($r->prodAlto);
+        $this->bean->setAnchoProducto($r->prodAncho);
+        $this->bean->setLargoProducto($r->prodLargo);
+        return $this->bean;
+    }
+
+    public function actualizarProductoAdmin(){
+        
+        $this->bean->setId($_POST['idproducto']);
+        $this->bean->setNombre($_POST['nvchproducto']);
+        $this->bean->setAltoProducto($_POST['naltoproducto']);
+        $this->bean->setAnchoProducto($_POST['nanchoproducto']);
+        $this->bean->setLargoProducto($_POST['nlargoproducto']);
+        $resultado = $this->model->actualizarProducto($this->bean);
+        if($resultado){
+            header('Location:../admin/index.php?sec=vProductos&msj=ok');   
+        }else{
+            header('Location:../admin/index.php?sec=vProductos&msj=error');   
+        }
+        
+    }
+
+    public function eliminarProductoAdmin($idproducto){
+        $resultado = $this->model->eliminarProducto($idproducto);
+        if($resultado){
+            header('Location:../admin/index.php?sec=vProductos&msj=ok');  
+        } else{
+            header('Location:../admin/index.php?sec=vProductos&msj=error');   
+        }
     }
 
 }

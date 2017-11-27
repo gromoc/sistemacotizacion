@@ -8,19 +8,27 @@ class BProducto{
     public $altoproducto;
     public $anchoproducto;
     public $largoproducto;
+    public $id;    
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function getId() {
+        return $this->id;
+    }
 
     function setAltoProducto($altoproducto) {
         $this->altoproducto = $altoproducto;
     }
     function getAltoProducto() {
-        return $this->nombre;
+        return $this->altoproducto;
     }
 
     function setAnchoProducto($anchoproducto) {
         $this->anchoproducto = $anchoproducto;
     }
     function getAnchoProducto() {
-        return $this->nombre;
+        return $this->anchoproducto;
     }
 
     function setLargoProducto($largoproducto) {
@@ -29,9 +37,6 @@ class BProducto{
     function getLargoProducto() {
         return $this->largoproducto;
     }
-
-
-
 
 
 

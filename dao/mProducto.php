@@ -20,11 +20,11 @@ class mProducto
 
   public function createNewMessage(BProducto $OBJProducto){ 
     try {    
-      $sql="INSERT INTO productos(prodNombre,prodAlto,prodAncho, prodLargo)"
+      $sql="INSERT INTO productos(prodNombre,prodAlto,prodAncho, prodLargo, prodEstado)"
             . "VALUES('$OBJProducto->nombre',"
             . "       '$OBJProducto->altoproducto'," 
             . "       '$OBJProducto->anchoproducto',"
-            . "       '$OBJProducto->largoproducto');";  
+            . "       '$OBJProducto->largoproducto'), 1;";  
        $result=$this->db->query($sql);
        $row_cnt=$this->db->affected_rows;
     } 
@@ -95,8 +95,7 @@ public function setUsuarioForId($idUser){
   try{
     $sql = "SELECT * FROM usuario u INNER JOIN persona p ON u.nPerCodigo = p.nPerCodigo WHERE p.nPerCodigo='$idUser'";
     $result=$this->db->query($sql);
-    if($result->num_rows >= 1){
-      
+    if($result->num_rows >= 1){      
       while($row = $result->fetch_assoc()){
         $data[] = $row;
       }
@@ -109,6 +108,50 @@ public function setUsuarioForId($idUser){
   }  catch (Exception $exc) {
     echo $exc;
 }
+}
+
+public function obtenerInfoProducto($idProducto){
+  try {
+    $sql = "SELECT * FROM productos WHERE idProducto = $idProducto WHERE idProducto = 1 ;";
+    $result=$this->db->query($sql);
+  }
+  catch (Exception $exc) {
+    echo $exc;
+  }
+return $result;
+}
+
+public function actualizarProducto(BProducto $OBJProducto){
+  $data;
+  try {
+    $sql = "update productos set prodNombre = '$OBJProducto->nombre', "
+           ."prodAlto = $OBJProducto->altoproducto, "
+           ."prodAncho = $OBJProducto->anchoproducto, "
+           ."prodLargo = $OBJProducto->largoproducto WHERE idProducto = $OBJProducto->id;";
+    $result=$this->db->query($sql);
+    
+    if($result){
+      $data=1;
+  }else{
+      $data=0; 
+  }
+  
+  }
+  catch (Exception $exc) {
+    echo $exc;
+  }
+  return $data;
+}
+
+public function eliminarProducto($idProducto){
+  try {
+    $sql = "update productos set prodEstado = 0 WHERE idProducto = $idProducto";
+    $result=$this->db->query($sql);
+  }
+  catch (Exception $exc) {
+    echo $exc;
+  }
+return $result;
 }
 
 

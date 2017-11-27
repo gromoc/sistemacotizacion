@@ -18,6 +18,9 @@ if(isset($_POST['tipoform'])){
         case "registroadmin":
             $obcregistro->registrarUsuarioAdmin();
             break;
+        case "actualizarusuadmin":
+            $obcregistro->actualizarUsuarioAdmin();
+            break;
         default:
             header('Location: ../vista/vLogin.php'); 
     }
@@ -25,7 +28,7 @@ if(isset($_POST['tipoform'])){
 
 class cRegistro{
     private $model;
-    private $bean;
+    private $bean;   
 
     public function __construct()
     {
@@ -33,7 +36,7 @@ class cRegistro{
     }
 
     public function validarUsuario(){
-        $objContacto=new mContacto();
+        $objContacto= new mContacto();
         $objBean=new BRegistro();
 
         $objBean->setUsuario($_POST['txtusuario']);
@@ -91,6 +94,51 @@ class cRegistro{
     public function obtenerUsuarios(){
         $objUsuario = new mUsuario();
         return $objUsuario->resultadoUsuarios();
+    }
+
+    public function obtenerUsuarioEditar($usu){
+        $objBeanRegistro= new BRegistro();
+        $objUsuario = new mUsuario();
+
+        $resul = $objUsuario->resultadoUsuariosEditar($usu);
+        $r = $resul->fetch_object();
+        $objBeanRegistro->setId($r->id);
+        $objBeanRegistro->setNombreruc($r->nombrersocial);
+        $objBeanRegistro->setDniRuc($r->dniruc);
+        $objBeanRegistro->setEmail($r->email);
+        $objBeanRegistro->setTelefono($r->numero);
+        $objBeanRegistro->setUsuario($r->cUsuUsuario);
+        $objBeanRegistro->setClave($r->cUsuClave);
+        return $objBeanRegistro;
+    }   
+
+    public function actualizarUsuarioAdmin(){        
+        $objBeanRegistro= new BRegistro();
+        $objUsuario = new mUsuario();
+        $objBeanRegistro->setId($_POST['idusuario']);
+        $objBeanRegistro->setNombreruc($_POST['txtnombrersocial']);
+        $objBeanRegistro->setDniRuc($_POST['txtdniruc']);
+        $objBeanRegistro->setEmail($_POST['txtemail']);
+        $objBeanRegistro->setTelefono($_POST['txttelefono']);
+        $objBeanRegistro->setUsuario($_POST['txtnomusuario']);  
+        $objBeanRegistro->setClave($_POST['txtpassusuario']);
+        $resultado = $objUsuario->actualizarUsuario($objBeanRegistro);
+        if($resultado){
+            header('Location:../admin/index.php?sec=vUsuarios&msj=ok');   
+        }else{
+            header('Location:../admin/index.php?sec=vUsuarios&msj=error');   
+        }
+    }
+
+    public function eliminarUsuarioAdmin($usu){
+        $objBeanRegistro= new BRegistro();
+        $objUsuario = new mUsuario();
+        $resultado = $objUsuario->eliminarUsuario($usu);
+        if($resultado){
+            header('Location:../admin/index.php?sec=vUsuarios&msj=ok');   
+        }else{
+            header('Location:../admin/index.php?sec=vUsuarios&msj=error');   
+        }
     }
 
 

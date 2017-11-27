@@ -7,6 +7,7 @@ class BRegistro{
     public $telefono;
     public $usuario;
     public $clave;      
+    public $id;    
 
     function setUsuario($usuario){
         $this->usuario = $usuario;
@@ -34,7 +35,7 @@ class BRegistro{
     }
 
     function getDniRuc() {
-        return $this->cldnirucave;
+        return $this->dniruc;
     }
 
     function setEmail($email){
@@ -51,6 +52,14 @@ class BRegistro{
 
     function getTelefono() {
         return $this->telefono;
+    }
+
+    function setId($id){
+        $this->id = $id;
+    }
+
+    function getId() {
+        return $this->id;
     }
 
    
