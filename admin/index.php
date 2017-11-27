@@ -8,6 +8,7 @@ include('../util/init.php');
 	<link href="<?= base_url_css."bootstrap.css "; ?>" rel="stylesheet">
 	<link href="<?= base_url_css."main.css "; ?>" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet">
 	
 </head>
 <body>
@@ -27,9 +28,7 @@ include('../util/init.php');
 				<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li>
-							<a>
-								HOLA ADMIN
-							</a>
+						<a class="button hvr-underline-from-center" href="../vista/index.php?sec=vCotizacion" target="_blank">Pagina Principal</a>
 						</li>
 						<li class="active">
 							<a href="?">Productos

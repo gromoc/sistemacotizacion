@@ -61,8 +61,8 @@ $resultado;
                 <br>
                 <input type="hidden" name="tipoform" value="<?php echo isset($_REQUEST['action']) ? "actualizarusuadmin" : "registroadmin"; ?>">
                 <input type="hidden" name="idusuario" value="<?php echo isset($_REQUEST['action']) ? $resultado->getId() : "0"; ?>">
-                <button type="submit" id="enviar" name="enviar" class="btn btn-primary">Guardar</button>
-                <button type="reset" class="btn btn-danger">Limpiar</button>
+                <button type="submit" id="enviar" name="enviar" class="btn btn-primary button cta hvr-float-shadow">Guardar</button>
+                <button type="reset" class="btn btn-danger button cta hvr-float-shadow">Limpiar</button>
             </form>
         </div>
     </div>
