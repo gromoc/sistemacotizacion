@@ -3,7 +3,7 @@ class Conectar{
 
     protected static $db_host= "localhost";
     protected static $db_user= "root";
-    protected static $db_pass= "";
+    protected static $db_pass= "victor";
     protected static $db_name= "db_cotizacion";
 
 
