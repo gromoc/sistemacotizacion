@@ -47,7 +47,7 @@ class cRegistro{
             header('Location: ../admin/');     
         }elseif($resultado == 2){
         
-            header('Location: ../vista/index.php?sec=vCotizacion'); 
+            header('Location: ../vista/index.php?sec=vCotizacion&res=1'); 
         
         }elseif($resultado == 200){
         
