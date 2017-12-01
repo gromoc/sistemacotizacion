@@ -100,7 +100,6 @@ public function setUsuarioForId($idUser){
         $data[] = $row;
       }
     }else{
-
       $data = false;
     }
     return $data;
@@ -145,13 +144,31 @@ public function actualizarProducto(BProducto $OBJProducto){
 
 public function eliminarProducto($idProducto){
   try {
-    $sql = "update productos set prodEstado = 0 WHERE idProducto = $idProducto";
+    $sql = "update productos set prodEstado = 0 WHERE idProducto = $idProducto;";
     $result=$this->db->query($sql);
   }
   catch (Exception $exc) {
     echo $exc;
   }
 return $result;
+}
+
+public function accesorioProducto(){
+  try{
+    $sql = "select '0' idAcessorio,  'SELECCIONE' nombreAccesorio UNION ALL select idAcessorio, nombreAccesorio FROM accesorio order by idAcessorio;";
+    $result=$this->db->query($sql);
+    if($result->num_rows >= 1){      
+      while($row = $result->fetch_assoc()){
+        $data[] = $row;
+      }
+    }else{
+      $data = false;
+    }
+    return $data;
+  } 
+  catch (Exception $exc) {
+    echo $exc;
+  }
 }
 
 

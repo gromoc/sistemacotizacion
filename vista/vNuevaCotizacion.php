@@ -25,7 +25,7 @@ $class= new cProducto();
 $idUsuario=$_SESSION['id'];
 $result2 = $class->getUsuarioForId($idUsuario);
 $result = $class->getProductForId($_GET['pro']);
-
+$accesorios = $class->getAccesorioProducto();
 
 
 $name = strtoupper($result[0]['prodNombre']);
@@ -42,7 +42,6 @@ $dni = $result2[0]['dniruc'];
 ?>
 
 <div class="container">
-
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
@@ -73,16 +72,17 @@ $dni = $result2[0]['dniruc'];
                                     </div>
                                 </div>
                             </div>
+
                             <div class="space"></div>
+
                             <div class="row">
                                 <div class="col-md-12">
-
                                     <h2>DATOS DEL PRODUCTO</h2>
-
                                 </div>
-
                             </div>
+
                             <div class="space"></div>
+
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group">
@@ -107,12 +107,7 @@ $dni = $result2[0]['dniruc'];
                                     </div>
                                 </div>
                             </div>
-                            <div class="space"></div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2>PERSONALIZAR MI PRODUCTO</h2>
-                                </div>
-                            </div>
+
                             <div class="space"></div>
 
                             <div class="row">
@@ -143,7 +138,34 @@ $dni = $result2[0]['dniruc'];
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="space"></div>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <h2>PERSONALIZAR MI PRODUCTO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="space"></div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Mas Accesorios</label>
+                                                <br>
+                                                <button type="button" class="btn btn-default">Agregar</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Elegir Accesorio</label>
+                                             <?php $data = $accesorios;  ?>
+                                                <select name="" id="cbAccesorioProducto" class="form-control" required="required">
+                                                   <?php foreach($data as $row): ?>
+                                                    <option value="<?= $row['idAccesorio']; ?>"><?= $row['nombreAccesorio']; ?></option>
+                                                    <?php endforeach; ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="row">
                                         <?php 
@@ -199,11 +221,11 @@ $dni = $result2[0]['dniruc'];
 </div>
 
 
-<?php endif; ?>
 
+<?php endif; ?>
 <?php else: echo('<script>window.location.replace("index.php?sec=vLogin");</script>'); ?>
-
 <?php endif; ?>
+
 
 <?php
 ob_end_flush();

@@ -113,6 +113,12 @@ class cProducto {
         }
     }
 
+    public function getAccesorioProducto(){
+        $resultado = $this->model->accesorioProducto();
+        return $resultado;
+    }
+
+
 }
 
 
